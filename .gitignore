@@ -1,0 +1,29 @@
+log/*
+config/database.yml
+config/edgewater_auth.yml
+*.swp
+notes.txt
+tmp/
+tags
+.bundle
+.DS_Store
+.rake_tasks~
+public/stylesheets/*
+public/assets/*
+public/uploads/*
+.yardoc
+doc/app
+coverage/
+doc/models.png
+.sass-cache
+test/reports
+features/reports
+
+# Combined sprite files
+app/assets/images/web/alert-see7e64db76.png
+
+# Foreman and config/boot.rb GC tuning
+.env
+.bin
+
+/rerun.txt
