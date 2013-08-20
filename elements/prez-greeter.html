@@ -1,6 +1,9 @@
+<link rel="import" href="prez-person-model.html">
+
 <polymer-element name="prez-greeter">
   <template>
-    Hello World
+    <prez-person-model id="person">
+    Hello, {{ $.person.name }}.
   </template>
   <script>
     Polymer('prez-greeter');
