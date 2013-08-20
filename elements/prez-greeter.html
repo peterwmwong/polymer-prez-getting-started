@@ -3,7 +3,8 @@
 <polymer-element name="prez-greeter">
   <template>
     <prez-person-model id="person">
-    Hello, {{ $.person.name }}.
+    Hello, {{ $.person.name }}. <br/>
+    <input type='text' value="{{ $.person.name }}">
   </template>
   <script>
     Polymer('prez-greeter');
