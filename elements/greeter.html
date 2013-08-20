@@ -1,10 +1,11 @@
 <link rel="import" href="person-model.html">
+<link rel="import" href="greeter-message.html">
 
 <polymer-element name="greeter">
 
   <template>
     <person-model id="person">
-    Hello, {{ $.person.name }}. <br/>
+    <greeter-message person="{{ $.person }}"></greeter-message>
     <input type='text' value="{{ $.person.name }}">
   </template>
 
