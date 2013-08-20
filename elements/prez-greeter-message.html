@@ -2,6 +2,9 @@
 
   <template>
     Hello, {{ person.name }}. <br/>
+    <template if="{{ person.name == 'Peter' }}">
+      You're looking well today.
+    </template>
   </template>
 
   <script>
