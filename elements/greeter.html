@@ -1,8 +1,14 @@
+<link rel="import" href="person-model.html">
+
 <polymer-element name="greeter">
+
   <template>
-    Hello World
+    <person-model id="person">
+    Hello, {{ $.person.name }}.
   </template>
+
   <script>
     Polymer('greeter');
   </script>
+
 </polymer-element>
