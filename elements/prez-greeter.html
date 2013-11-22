@@ -1,0 +1,15 @@
+<link rel="import" href="prez-person-model.html">
+<link rel="import" href="prez-greeter-message.html">
+
+<polymer-element name="prez-greeter">
+  <template>
+    <prez-person-model id="person">
+    <prez-greeter-message person="{{ $.person }}"></prez-greeter-message>
+    <input type='text' value="{{ $.person.name }}">
+  </template>
+
+  <script>
+    Polymer('prez-greeter');
+  </script>
+
+</polymer-element>

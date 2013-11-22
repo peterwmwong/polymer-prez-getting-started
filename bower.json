@@ -1,0 +1,19 @@
+{
+  "name": "polymer-prez-getting-started",
+  "version": "0.0.2",
+  "homepage": "https://github.com/peterwmwong/polymer-prez-getting-started",
+  "authors": [
+    "Ryan Gerry <ryan@ryangerry.com>",
+    "Peter Wong <peterwmwong@gmail.com>"
+  ],
+  "description": "Hello World Polymer Application",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "~0.0.20131107"
+  }
+}
