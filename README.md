@@ -5,18 +5,18 @@
 
 
 - [ ] **Import Polymer**
-    > git checkout c8d5f4406fbe2fcfb4c0969036f391e0dc25e900
+    $ bower install polymer
+    > git checkout 767e7be
 
 
 - [ ] **Setup HTML / Import polymer**
-    > git checkout e212e7b12e3bcbdb02634acc4839f460361963d5
+    > git checkout a0d02e1
 
   - Added `index.html`
-    - `<script src="polymer/polymer.min.js"></script>`
+    - `<script src="bower_components/polymer/polymer.min.js"></script>`
 
-
-- [ ] **Define a polymer-element (<greeter>)**
-    > git checkout 0211fb342c426d2e368cfafb6bc0ec8db3d7ef9e
+- [ ] **Define a polymer-element (<prez-greeter>)**
+    > git checkout 77d9537
 
   - Added `elements/greeter.html`
     - `<polymer-element>`
@@ -24,45 +24,45 @@
       - `<script>`
 
 
-- [ ] **Import and use polymer-element (<greeter>)**
-    > git checkout 1cc66743b7f074c6fb468ff897f0493d61382d02
+- [ ] **Import and use polymer-element (<prez-greeter>)**
+    > git checkout 2a0d1d7
 
   - Modified `index.html`
-    - `<link rel="import" href="elements/greeter.html">`
-      - `<greeter/>`
+    - `<link rel="import" href="elements/prez-greeter.html">`
+      - `<prez-greeter/>`
 
 
 - [ ] **Define a model. Render data from the model.**
-    > git checkout c692d8700235e0fb27f140bcb3ffc1e1d5db810c
+    > git checkout 0bfdbe0
 
-  - Added `person-model.html`
+  - Added `prez-person-model.html`
     - @name property
 
-  - Modified `greeter.html`
-    - `<link rel="import" href="person-model.html">`
-    - `<person-model id="person">`
+  - Modified `prez-greeter.html`
+    - `<link rel="import" href="prez-person-model.html">`
+    - `<prez-person-model id="person">`
     - `{{ $.person.name }}`
 
 
 - [ ] **Bind the model**
-    > git checkout 02c5afcdb3ffc1d80846db133eac57ef207bab6e
+    > git checkout 632d1d2
 
-  - Modified `greeter.html`
+  - Modified `prez-greeter.html`
     - `<input type='text' value="{{ $.person.name }}">`
 
 
 - [ ] **Pass data to a polymer-element**
-    > git checkout 2150e617252bcb4bd96aa187bea01ae597225755
+    > git checkout b0c1f51
 
-  - Added `greeter-message.html`
+  - Added `prez-greeter-message.html`
     - `attributes="person"`
 
   - Modified `greeter.html`
-    - `<greeter-message person="{{ $.person }}"></greeter-message>`
+    - `<prez-greeter-message person="{{ $.person }}"></prez-greeter-message>`
 
 
 - [ ] **Template logic with if**
-    > git checkout cc94adeb4d2cf12691ddd4b722eb2a7e6c4ff60b
+    > git checkout bebab96
 
-  - Modified `greeter-message.html`
-    - `<template if="{{ person.name == 'Dave' }}">`
+  - Modified `prez-greeter-message.html`
+    - `<template if="{{ person.name == 'Peter' }}">`
